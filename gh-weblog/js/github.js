@@ -12,9 +12,6 @@
     var path = "/repos/"+username+"/"+repo+"/contents/"+target + "?access_token=" + token;
     var xhr = new XMLHttpRequest();
     xhr.open(method, "https://api.github.com" + path, true);
-    if(path.indexOf(".json")>-1) {
-      xhr.setRequestHeader("Content-Type","application/json");
-    }
     xhr.onreadystatechange  = function() {
       if (xhr.readyState === 4) {
         if (xhr.status === 0 || xhr.status === 200 || (xhr.status === 201 && method === "PUT")) {
