@@ -42,7 +42,6 @@ function setupWebLog(options) {
       try {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", context.path + "content/"+resource+".json", true);
-        xhr.setRequestHeader("Content-Type","application/json");
         xhr.onreadystatechange  = function() {
           if (xhr.readyState === 4) {
             if (xhr.status === 0 || xhr.status === 200) {
