@@ -34,3 +34,8 @@ header h1 {
 #gh-weblog-container .entries .content:before {
   display: none;
 }
+
+a, a:active, a:hover, a:visited {
+  text-decoration: none;
+  color: rgb(100,180,230);
+}
