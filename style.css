@@ -14,6 +14,9 @@ body {
   font-family: Lato;
   background: white;
   min-height: 100%;
+  border: 1px solid black;
+  border-width: 0 1px;
+  box-shadow: 0 0 10px 4px gray;
 }
 
 #gh-weblog-container h1 {
