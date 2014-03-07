@@ -1,10 +1,15 @@
 @import url('http://fonts.googleapis.com/css?family=Lustria');
 @import url('http://fonts.googleapis.com/css?family=Lato');
 
+html {
+  background: url('image/dimension.png');
+}
+
 body {
   width: 960px;
   margin: auto;
   font-family: Lato;
+  background: white;
 }
 
 #gh-weblog-container h1 {
