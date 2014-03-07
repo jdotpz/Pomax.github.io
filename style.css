@@ -1,5 +1,6 @@
-@import url('http://fonts.googleapis.com/css?family=Lustria');
-@import url('http://fonts.googleapis.com/css?family=Lato');
+@import url('//fonts.googleapis.com/css?family=Lustria');
+@import url('//fonts.googleapis.com/css?family=Lato');
+@import url('//fonts.googleapis.com/css?family=Eagle+Lake');
 
 html {
   background: url('image/dimension.png');
@@ -21,6 +22,10 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: Lustria;
+}
+
+header h1 {
+  font-family: 'Eagle Lake';
 }
 
 #gh-weblog-container .entries .content:before {
