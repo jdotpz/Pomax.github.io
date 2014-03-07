@@ -3,13 +3,16 @@
 
 html {
   background: url('image/dimension.png');
+  height: 100%;
 }
 
 body {
   width: 960px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 1em;
   font-family: Lato;
   background: white;
+  min-height: 100%;
 }
 
 #gh-weblog-container h1 {
