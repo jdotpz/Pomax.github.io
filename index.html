@@ -1,19 +1,17 @@
-<!doctype>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>pomax.github.io</title>
+    <title>A GitHub weblog</title>
     <link rel="stylesheet" href="gh-weblog/styles/style.css" media="screen">
+    <script src="gh-weblog/js/underscore.min.js"></script>
+    <script src="gh-weblog/js/jquery.2.js"></script>
+    <script src="gh-weblog/js/octokit.js"></script>
     <script src="gh-weblog/js/main.js"
-      onload="setupWebLog({username: 'Pomax', repo: 'Pomax.github.io', branch: 'master', path: 'gh-weblog', order: 'newest'})"
-      async></script>
-    <style>#gh-weblog-container > h1 { display: none; }</style>
+            onload="setupWebLog({username: 'Pomax', repo: 'pomax.github.io', branch: 'master', path: 'gh-weblog', order: 'newest'})"
+            async></script>
   </head>
-  <body>
-    <header>
-      <h1>A blog of sorts, by Pomax</h1>
-      <h3>Because keeping track of the past through technology's kind of cool</h3>
-    </head>
-    <div id="gh-weblog-container"></div>
+  <body class="default">
+  	<div id="gh-weblog-container"></div>
   </body>
 </html>
