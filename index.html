@@ -4,12 +4,7 @@
     <meta charset="utf-8">
     <title>Pomax.github.io</title>
     <link rel="stylesheet" href="gh-weblog/styles/style.css" media="screen">
-    <script src="gh-weblog/js/underscore.min.js"></script>
-    <script src="gh-weblog/js/jquery.2.js"></script>
-    <script src="gh-weblog/js/octokit.js"></script>
-    <script src="gh-weblog/js/main.js"
-            onload="setupWebLog({username: 'Pomax', repo: 'pomax.github.io', branch: 'master', path: 'gh-weblog', order: 'newest'})"
-            async></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="default">
     <header>
@@ -19,5 +14,12 @@
     <main>
     	<div id="gh-weblog-container"></div>
     </main>
+    <!-- scripts come last -->
+    <script src="gh-weblog/js/underscore.min.js"></script>
+    <script src="gh-weblog/js/jquery.2.js"></script>
+    <script src="gh-weblog/js/octokit.js"></script>
+    <script src="gh-weblog/js/main.js"
+            onload="setupWebLog({username: 'Pomax', repo: 'pomax.github.io', branch: 'master', path: 'gh-weblog', order: 'newest'})"
+            async></script>
   </body>
 </html>
