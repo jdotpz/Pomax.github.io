@@ -19,7 +19,7 @@ body {
   box-shadow: 0 0 50px 5px gray;
 }
 
-#gh-weblog-container h1 {
+#gh-weblog-container > h1 {
 	display: none;
 }
 
