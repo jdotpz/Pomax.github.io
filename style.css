@@ -39,3 +39,6 @@ a, a:active, a:hover, a:visited {
   text-decoration: none;
   color: rgb(100,180,230);
 }
+a:hover {
+  color: rgb(80,140,200);
+}
