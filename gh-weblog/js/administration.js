@@ -70,6 +70,15 @@ function setupPostHandling() {
         var element = _.children[0];
         entriesDiv.prependChild(element);
         context.parseEntry(element);
+        // Do we need to scrollTo?
+        var l = window.location.toString(),
+            pos = l.lastIndexOf("#");
+        if(pos > -1) {
+          var fragment = l.substring(pos);
+          if (fragment.length > 2) {
+            window.location = fragment;
+          }
+        }
       });
     } catch (e) { return console.error("Nunjucks error", e); }
   };
