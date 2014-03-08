@@ -210,10 +210,12 @@ function setupPostHandling() {
     var path = context.path + 'js/content.js';
     var contentString = 'window["gh-weblog"].content = [\n  "' + context.content.join('",\n  "') + '"\n];\n';
 
-    branch.write(path, contentString, 'content entry update for ' + filename)
+    branch.write(path, contentString, 'content entry update (' + (removeFile ? 'entry deleted' : 'new entry') + ') for ' + filename)
           .then(function() {
             setTimeout(function() {
-              if(removeFile) { delete context.entries[""+uid]; }
+              if(removeFile) {
+                context.entries[""+uid] = false;
+              }
               var rssPath = context.path + 'rss.xml';
               var rssContentString = formRSS(context.entries);
               branch.write(rssPath, rssContentString, 'content entry RSS update (' + (removeFile ? 'entry deleted' : 'new entry') + ') for ' + filename);
