@@ -115,7 +115,7 @@ function setupPostHandling() {
     if(!updated) return;
     // send a github "create" commit to github for this entry's file
     if (entry.classList.contains("pending")) {
-    //console.log("NEW ENTRY - SAVING RATHER THAN UPDATING");
+      //console.log("NEW ENTRY - SAVING RATHER THAN UPDATING");
       context.saveEntry(uid, function afterSaving(err) {
         entry.classList.remove("pending");
       });
@@ -127,12 +127,7 @@ function setupPostHandling() {
       var filename = cfnGenerator(uid);
       var path = context.path + 'content/' + filename;
       //console.log("updateEntry", path);
-      branch.write(path, entryString, 'new content for entry '+filename)
-          .then(function() {
-            setTimeout(function() {
-              context.saveContentJS(filename);
-            }, 2000);
-          });
+      branch.write(path, entryString, 'new content for entry '+filename);
     }
   };
 
