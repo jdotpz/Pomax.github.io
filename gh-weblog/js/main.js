@@ -44,8 +44,7 @@ function setupWebLog(options) {
         if(pos > -1) {
           var fragment = l.substring(pos);
           if (fragment.length > 2) {
-            var e = document.querySelector(fragment);
-            window.scrollTo(0, e.offsetTop);
+            window.location = fragment;
           }
         }
         return;
