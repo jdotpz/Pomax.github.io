@@ -127,7 +127,12 @@ function setupPostHandling() {
       var filename = cfnGenerator(uid);
       var path = context.path + 'content/' + filename;
       //console.log("updateEntry", path);
-      branch.write(path, entryString, 'new content for entry '+filename);
+      branch.write(path, entryString, 'new content for entry '+filename)
+          .then(function() {
+            setTimeout(function() {
+              context.saveContentJS(filename);
+            }, 2000);
+          });
     }
   };
 
@@ -207,14 +212,11 @@ function setupPostHandling() {
     var path = context.path + 'js/content.js';
     var contentString = 'window["gh-weblog"].content = [\n  "' + context.content.join('",\n  "') + '"\n];\n';
 
-console.log("a>", path, contentString);
-
     branch.write(path, contentString, 'content entry update for ' + filename)
           .then(function() {
             setTimeout(function() {
               var rssPath = context.path + 'rss.xml';
               var rssContentString = formRSS(context.entries);
-              console.log("b>", rssPath, rssContentString);
               branch.write(rssPath, rssContentString, 'content entry RSS update for ' + filename);
             }, 2000);
           });
