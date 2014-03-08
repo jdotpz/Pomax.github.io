@@ -180,7 +180,9 @@ function setupPostHandling() {
       var entryString = [
           '<item>'
         , '<title>' + e.title + '</title>'
-        , '<description>' + e.content + '</description>'
+        , '<description>' + (function() {
+             return e.content.split("\n")[0];
+          }())+ '</description>'
         , '<link>' + window.location.toString() + '#</link>'
         , '<guid>' + e.published + '</guid>'
         , '<pubDate>' + (new Date(e.published)).toString() + '</pubDate>'
