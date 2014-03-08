@@ -175,7 +175,7 @@ function setupPostHandling() {
     ].join("\n") + "\n";
 
     var content = '';
-    Object.keys(entries).forEach(function(key) {
+    Object.keys(entries).reverse().forEach(function(key) {
       var e = entries[key];
       var entryString = [
           '<item>'
