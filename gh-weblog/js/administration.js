@@ -172,6 +172,7 @@ function setupPostHandling() {
     var content = '';
     Object.keys(entries).reverse().forEach(function(key) {
       var e = entries[key];
+      if (!e) return;
       var entryString = [
           '<item>'
         , '<title>' + e.title + '</title>'
@@ -198,7 +199,7 @@ function setupPostHandling() {
   /**
    * Save the update to the content.js file, and regenerate the RSS
    */
-  context.saveContentJS = function saveContentJS(filename, removeFile) {
+  context.saveContentJS = function saveContentJS(filename, removeFile, uid) {
     var shortString = filename.replace(".json",'');
     if(removeFile) {
       var pos = context.content.indexOf(shortString);
@@ -212,10 +213,10 @@ function setupPostHandling() {
     branch.write(path, contentString, 'content entry update for ' + filename)
           .then(function() {
             setTimeout(function() {
-              if(removeFile) { delete context.entries[filename]; }
+              if(removeFile) { delete context.entries[""+uid]; }
               var rssPath = context.path + 'rss.xml';
               var rssContentString = formRSS(context.entries);
-              branch.write(rssPath, rssContentString, 'content entry RSS update for ' + filename);
+              branch.write(rssPath, rssContentString, 'content entry RSS update (' + (removeFile ? 'entry deleted' : 'new entry') + ') for ' + filename);
             }, 2000);
           });
   };
@@ -239,7 +240,7 @@ function setupPostHandling() {
             //console.log("post remove hook");
             setTimeout(function() {
               var removeFile = true;
-              context.saveContentJS(filename, removeFile);
+              context.saveContentJS(filename, removeFile, uid);
             }, 2000);
           });
   };
