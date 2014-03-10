@@ -46,7 +46,7 @@ function setupPostHandling() {
   /**
    *
    */
-  context.addEntry = function newEntry(uid, entryObject) {
+  context.addEntry = function addEntry(uid, entryObject) {
     uid = uid || Date.now();
     //console.log("new entry " + uid);
 
@@ -55,6 +55,7 @@ function setupPostHandling() {
       title: "",
       author: context.username,
       content: "#New Entry\nclick the entry to start typing",
+      tags: [],
       published: uid,
       updated: uid,
       pending: true
