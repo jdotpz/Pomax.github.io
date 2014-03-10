@@ -4,6 +4,7 @@ function setupPostHandling() {
       github,
       repo,
       branch,
+      cacheDelay = 5000,
       cfnGenerator = function(uid) {
         var d = new Date(uid ? uid : Date.now()),
             components = [
@@ -175,7 +176,7 @@ function setupPostHandling() {
             setTimeout(function(){
               context.saveContentJS(filename);
               cue(afterSaving);
-            }, 2000);
+            }, cacheDelay);
           });
   };
 
