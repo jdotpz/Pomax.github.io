@@ -65,12 +65,14 @@ function setupPostHandling() {
     // add to page
     try {
       nunjucksEnv.render("entry.html", entryObject, function(err, result) {
+
         if(err) { return console.error("Nunjucks render error", err); }
         var _ = document.createElement("div");
         _.innerHTML = result;
         var element = _.children[0];
         entriesDiv.prependChild(element);
         context.parseEntry(element);
+
         // Do we need to scrollTo?
         var l = window.location.toString(),
             pos = l.lastIndexOf("#");
@@ -80,6 +82,13 @@ function setupPostHandling() {
             window.location = fragment;
           }
         }
+
+        // can we bind tag-editing?
+        var tagsdiv = element.querySelector(".tags")
+        tagsdiv.addEventListener("click", function(evt) {
+          console.log("clix", uid, entryObject);
+        });
+
       });
     } catch (e) { return console.error("Nunjucks error", e); }
   };
