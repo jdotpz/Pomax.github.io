@@ -6,7 +6,7 @@
   </div>
   <div>
     <div class="content" data-prefix="{{ published | shortDate }}" onclick="window['gh-weblog'].editEntry({{ published }})">{{ content }}</div>
-    <div class="tags">{% if tags %}{{ tags }}{% endif %}</div>
+    <div class="tags">{% if tags %}{{ tags.join(", ") }}{% endif %}</div>
     <textarea class="hidden original content" onblur="window['gh-weblog'].updateEntry({{ published }}, this)">{{ content }}</textarea>
   </div>
 </div>
