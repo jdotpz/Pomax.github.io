@@ -202,6 +202,13 @@ function setupPostHandling() {
         , '<description>' + (function() {
              return e.content.split("\n")[0];
           }())+ '</description>'
+        , (function(tags) {
+          var s = [];
+          tags.forEach(function(tag) {
+            s.push('<category>' + tag + '</category>');
+          });
+          return s.join("\n");
+        }(e.tags))
         , '<link>' + window.location.toString() + '#gh-weblog-' + e.published + '</link>'
         , '<guid>' + e.published + '</guid>'
         , '<pubDate>' + (new Date(e.published)).toString() + '</pubDate>'
