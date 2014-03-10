@@ -1,6 +1,13 @@
 <!doctype html>
 <html>
   <head>
+    <script>
+      (function() {
+        if(window.location.protocol === "http:") {
+          window.location = window.location.toString().replace("http:","https:");
+        }
+      }());
+    </script>
     <meta charset="utf-8">
     <title>Pomax.github.io</title>
     <link rel="stylesheet" href="gh-weblog/styles/style.css" media="screen">
