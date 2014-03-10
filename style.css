@@ -53,6 +53,7 @@ header h1 {
   float: right;
   font-size: 80%;
   margin: 0.25em 0 0 0;
+  color: rgb(116, 144, 154);
 }
 
 a, a:active, a:hover, a:visited {
