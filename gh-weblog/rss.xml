@@ -4,18 +4,30 @@
 <title>Pomax.github.io</title>
 <description>Pomax.github.io</description>
 <link>http://pomax.github.io/</link>
-<lastBuildDate>Fri Mar 07 2014 20:21:48 GMT-0800 (PST)</lastBuildDate>
-<pubDate>Fri Mar 07 2014 20:21:48 GMT-0800 (PST)</pubDate>
+<lastBuildDate>Sun Mar 09 2014 21:32:55 GMT-0700 (PDT)</lastBuildDate>
+<pubDate>Sun Mar 09 2014 21:32:55 GMT-0700 (PDT)</pubDate>
 <ttl>1440</ttl>
 <item>
 <title></title>
+<description>#An excursion into OpenType fonts</description>
+<category>OpenType</category>
+<category>CFF</category>
+<link>http://pomax.github.io/#gh-weblog-1394399924544</link>
+<guid>1394399924544</guid>
+<pubDate>Sun Mar 09 2014 14:18:44 GMT-0700 (PDT)</pubDate>
+</item><item>
+<title></title>
 <description>#Mozilla offices need fox plushies</description>
+<category>Mozilla</category>
+<category>Vancouver</category>
 <link>http://pomax.github.io/#gh-weblog-1394223197018</link>
 <guid>1394223197018</guid>
 <pubDate>Fri Mar 07 2014 12:13:17 GMT-0800 (PST)</pubDate>
 </item><item>
 <title></title>
 <description>#A blog? About time, wouldn't you say?</description>
+<category>Github</category>
+<category>Blog</category>
 <link>http://pomax.github.io/#gh-weblog-1394168624375</link>
 <guid>1394168624375</guid>
 <pubDate>Thu Mar 06 2014 21:03:44 GMT-0800 (PST)</pubDate>
