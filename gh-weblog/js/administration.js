@@ -86,11 +86,11 @@ function setupPostHandling() {
         // can we bind tag-editing?
         var tagsdiv = element.querySelector(".tags")
         tagsdiv.addEventListener("click", function(evt) {
-          console.log("clix", uid, entryObject);
-          var input = prompt("Tags?", entryObject.tags.join(","));
+          var input = prompt("Specify tags (comma separated):", entryObject.tags.join(", "));
           if(!input) return;
           entryObject.tags = input.split(",").map(function(v) { return v.trim(); });
           context.updateEntry(uid);
+          tagsdiv.innerHTML = entryObject.tags.join(",");
         });
 
       });
@@ -150,7 +150,7 @@ function setupPostHandling() {
       var entryString = JSON.stringify(entryObject);
       var filename = cfnGenerator(uid);
       var path = context.path + 'content/' + filename;
-      branch.write(path, entryString, 'new content for entry '+filename);
+      branch.write(path, entryString, 'update for entry '+filename);
     }
   };
 
