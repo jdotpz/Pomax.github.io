@@ -88,6 +88,9 @@ function setupPostHandling() {
         tagsdiv.addEventListener("click", function(evt) {
           console.log("clix", uid, entryObject);
           var input = prompt("Tags?", entryObject.tags.join(","));
+          if(!input) return;
+          var tags = input.split(",").map(function(v) { return v.trim(); });
+          console.log(tags);
         });
 
       });
