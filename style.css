@@ -45,6 +45,16 @@ header h1 {
   display: none;
 }
 
+#gh-weblog-container .entry .content {
+  text-align: justify;
+}
+
+#gh-weblog-container .entry div.tags {
+  float: right;
+  font-size: 80%;
+  margin: 0.25em 0 0 0;
+}
+
 a, a:active, a:hover, a:visited {
   text-decoration: none;
   color: rgb(100,180,230);
