@@ -3,7 +3,7 @@
   <head>
     <script>
       (function() {
-        if(window.location.protocol === "http:") {
+        if(window.location.hostname !== "localhost" && window.location.protocol === "http:") {
           window.location = window.location.toString().replace("http:","https:");
         }
       }());
