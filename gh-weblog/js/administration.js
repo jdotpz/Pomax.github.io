@@ -199,10 +199,9 @@ function setupPostHandling() {
       if (!e) return;
       var entryString = [
           '<item>'
-        , '<title>' + e.title + '</title>'
-        , '<description>' + (function() {
-             return e.content.split("\n")[0];
-          }())+ '</description>'
+        , '<title>' + (function() {
+             return e.content.split("\n")[0].replace(/#/g,'');
+          }())+ '</title>'
         , (function(tags) {
           var s = [];
           tags.forEach(function(tag) {
