@@ -39,13 +39,18 @@
     </script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     <script>
-    function mathProcessor() {
+    // markdown turns ` into <code>, and we don't want that for LaTeX
+    function cleanMath() {
       return function(element) {
-        // markdown turns ` into <code>, and we don't want that for LaTeX
         var s = element.innerHTML;
         s = s.replace(/<code>\\\[/g, '\\[');
         s = s.replace(/\\\]<\/code>/g, '\\]');
         element.innerHTML = s;
+      };
+    }
+    // do MathJax stuffs
+    function processMath() {
+      return function(element) {
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, element, false]);
       };
     }
@@ -57,7 +62,7 @@
               branch: 'master',
               path: 'gh-weblog',
               order: 'newest',
-              processors: ['mathProcessor']})"
+              processors: ['cleanMath', 'processMath']})"
             async></script>
   </body>
 </html>
