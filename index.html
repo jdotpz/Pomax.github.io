@@ -42,19 +42,15 @@
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
   <script>
   // markdown turns ` into <code>, and we don't want that for LaTeX
-  function cleanMath() {
-    return function(element) {
-      var s = element.innerHTML;
-      s = s.replace(/<code>\\\[/g, '\\[');
-      s = s.replace(/\\\]<\/code>/g, '\\]');
-      element.innerHTML = s;
-    };
+  function cleanMath(element) {
+		var s = element.innerHTML;
+		s = s.replace(/<code>\\\[/g, '\\[');
+		s = s.replace(/\\\]<\/code>/g, '\\]');
+		element.innerHTML = s;
   }
   // do MathJax stuffs
-  function processMath() {
-    return function(element) {
-      MathJax.Hub.Queue(["Typeset", MathJax.Hub, element, false]);
-    };
+  function processMath(element) {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, element, false]);
   }
   </script>
   <script src="gh-weblog/js/main.js"
