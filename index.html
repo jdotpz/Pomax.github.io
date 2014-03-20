@@ -46,7 +46,12 @@
         return false;
       }
       return function(element) {
-         MathJax.Hub.Queue(["Typeset", MathJax.Hub, element, false]);
+        // markdown turns ` into <code>, and we don't want that for LaTeX
+        var s = element.innerHTML;
+        s = s.replace(/<code>\\\[/g, '\\[');
+        s = s.replace(/\\\]<\/code>/g, '\\]');
+        element.innerHTML = s;
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, element, false]);
       };
     }
     </script>
