@@ -33,7 +33,7 @@ function setupPostHandling() {
   // admin functions
   var show   = function(e) { e.classList.remove("hidden"); }
   var hide   = function(e) { e.classList.add("hidden"); }
-  var remove = function(e) { e.paarentNode.removeChild(e); }
+  var remove = function(e) { e.parentNode.removeChild(e); }
 
   /**
    *
@@ -57,7 +57,7 @@ function setupPostHandling() {
       title: "",
       author: context.username,
       content: "#New Entry\nclick the entry to start typing",
-      tags: [],
+      tags: ['no tags yet'],
       published: uid,
       updated: uid,
       pending: true
