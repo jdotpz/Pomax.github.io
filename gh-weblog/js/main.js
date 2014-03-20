@@ -5,6 +5,10 @@ function setupWebLog(options) {
   }
   context.path = options.path;
   context.newestFirst = options.order ? options.order=="newest" : false;
+  delete options.path;
+
+  context.processors = options.processors.map(function(fName) { return window[fName]; }) || [];
+  delete options.processors;
 
   /**
    * Goddamnit, IE

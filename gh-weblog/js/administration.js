@@ -21,6 +21,7 @@ function setupPostHandling() {
         return components.join("-") + ".json";
       };
 
+
   entriesDiv.prependChild = function(element) {
     if(entriesDiv.children.length === 0) {
       entriesDiv.appendChild(element);
@@ -66,13 +67,14 @@ function setupPostHandling() {
     // add to page
     try {
       nunjucksEnv.render("entry.html", entryObject, function(err, result) {
-
         if(err) { return console.error("Nunjucks render error", err); }
+
         var _ = document.createElement("div");
         _.innerHTML = result;
         var element = _.children[0];
         entriesDiv.prependChild(element);
         context.parseEntry(element);
+        context.processors.forEach(function(fn) { fn(element); });
 
         // Do we need to scrollTo?
         var l = window.location.toString(),
@@ -137,6 +139,7 @@ function setupPostHandling() {
       // reswitcharoo
       ocontent.hide();
       content.innerHTML = marked(newContent);
+      context.processors.forEach(function(fn) { fn(content); });
       content.show();
       if(!updated) return;
     }

@@ -2,6 +2,7 @@
 <html>
   <head>
     <script>
+      // force HTTPS if we're on HTTP (and not localhost)
       (function() {
         if(window.location.hostname !== "localhost" && window.location.protocol === "http:") {
           window.location = window.location.toString().replace("http:","https:");
@@ -19,14 +20,44 @@
       <h3>Because chronicling the past using technology is kind of cool (Also available in <a href="gh-weblog/rss.xml">RSS</a>).</h3>
     </header>
     <main>
-    	<div id="gh-weblog-container"></div>
+      <div id="gh-weblog-container"></div>
     </main>
     <!-- scripts come last -->
     <script src="gh-weblog/js/underscore.min.js"></script>
     <script src="gh-weblog/js/jquery.2.js"></script>
     <script src="gh-weblog/js/octokit.js"></script>
+
+    <!-- MathJax for beautiful LaTeX functions -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "2em",
+        TeX: {
+          extensions: ["color.js"]
+        },
+        skipStartupTypeset: true
+      });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+    <script>
+    function mathProcessor() {
+      if(typeof MathJax === "undefined") {
+        return false;
+      }
+      return function(element) {
+         MathJax.Hub.Queue(["Typeset", MathJax.Hub, element, false]);
+      };
+    }
+    </script>
     <script src="gh-weblog/js/main.js"
-            onload="setupWebLog({username: 'Pomax', repo: 'Pomax.github.io', branch: 'master', path: 'gh-weblog', order: 'newest'})"
+            onload="setupWebLog({
+              username: 'Pomax',
+              repo: 'Pomax.github.io',
+              branch: 'master',
+              path: 'gh-weblog',
+              order: 'newest',
+              processors: ['mathProcessor']})"
             async></script>
   </body>
 </html>
