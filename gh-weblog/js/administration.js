@@ -30,6 +30,11 @@ function setupPostHandling() {
     }
   }
 
+  // admin functions
+  var show   = function(e) { e.classList.remove("hidden"); }
+  var hide   = function(e) { e.classList.add("hidden"); }
+  var remove = function(e) { e.paarentNode.removeChild(e); }
+
   /**
    *
    */
@@ -38,11 +43,6 @@ function setupPostHandling() {
     var content = entry.querySelector(".content"),
         ocontent = entry.querySelector(".original.content");
     content.innerHTML = marked(ocontent.textContent);
-    [content, ocontent].forEach(function(e) {
-      e.show = function() { e.classList.remove("hidden"); }
-      e.hide = function() { e.classList.add("hidden"); }
-      e.remove = function() { e.paarentNode.removeChild(e); }
-    });
   };
 
   /**
@@ -111,8 +111,8 @@ function setupPostHandling() {
         ocontent = entry.querySelector(".hidden.original.content");
     // switcharoo
     if(!document.body.classList.contains("default")) {
-      content.hide();
-      ocontent.show();
+      hide(content);
+      show(ocontent);
       ocontent.focus();
     }
   };
@@ -137,10 +137,10 @@ function setupPostHandling() {
         updated = true;
       }
       // reswitcharoo
-      ocontent.hide();
+      hide(ocontent);
       content.innerHTML = marked(newContent);
       context.processors.forEach(function(fn) { fn(content); });
-      content.show();
+      show(content);
       if(!updated) return;
     }
     // send a github "create" commit to github for this entry's file
@@ -264,7 +264,7 @@ function setupPostHandling() {
     if(!uid) return;
     var entry = document.getElementById("gh-weblog-"+uid);
     var confirmation = confirm("Are you sure you want to remove this entry?");
-    if(confirmation) entry.remove();
+    if(confirmation) remove(entry);
 
     // send a github "removal" commit up to github for the old file and removal from content.js
     var filename = cfnGenerator(uid);
