@@ -4,35 +4,44 @@
 <title>Pomax.github.io</title>
 <description>Pomax.github.io</description>
 <link>https://pomax.github.io/</link>
-<lastBuildDate>Mon Mar 17 2014 14:56:42 GMT-0700 (PDT)</lastBuildDate>
-<pubDate>Mon Mar 17 2014 14:56:42 GMT-0700 (PDT)</pubDate>
+<lastBuildDate>Thu Mar 20 2014 13:23:28 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
+<pubDate>Thu Mar 20 2014 13:23:28 GMT-0700 (Pacific Daylight Time)</pubDate>
 <ttl>1440</ttl>
 <item>
+<title>Of Math and MathJax</title>
+
+<link>https://pomax.github.io/#gh-weblog-1395346781053</link>
+<guid>1395346781053</guid>
+<pubDate>Thu Mar 20 2014 13:19:41 GMT-0700 (Pacific Daylight Time)</pubDate>
+</item><item>
 <title>Projections and arcs - oh my</title>
+<category>Processing</category>
+<category>physics</category>
+<category>maths</category>
 <link>https://pomax.github.io/#gh-weblog-1395093268989</link>
 <guid>1395093268989</guid>
-<pubDate>Mon Mar 17 2014 14:54:28 GMT-0700 (PDT)</pubDate>
+<pubDate>Mon Mar 17 2014 14:54:28 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>An excursion into OpenType fonts</title>
 <category>OpenType</category>
 <category>CFF</category>
 <link>https://pomax.github.io/#gh-weblog-1394399924544</link>
 <guid>1394399924544</guid>
-<pubDate>Sun Mar 09 2014 14:18:44 GMT-0700 (PDT)</pubDate>
+<pubDate>Sun Mar 09 2014 14:18:44 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Mozilla offices need fox plushies</title>
 <category>Mozilla</category>
 <category>Vancouver</category>
 <link>https://pomax.github.io/#gh-weblog-1394223197018</link>
 <guid>1394223197018</guid>
-<pubDate>Fri Mar 07 2014 12:13:17 GMT-0800 (PST)</pubDate>
+<pubDate>Fri Mar 07 2014 12:13:17 GMT-0800 (Pacific Standard Time)</pubDate>
 </item><item>
 <title>A blog? About time, wouldn't you say?</title>
 <category>Github</category>
 <category>Blog</category>
 <link>https://pomax.github.io/#gh-weblog-1394168624375</link>
 <guid>1394168624375</guid>
-<pubDate>Thu Mar 06 2014 21:03:44 GMT-0800 (PST)</pubDate>
+<pubDate>Thu Mar 06 2014 21:03:44 GMT-0800 (Pacific Standard Time)</pubDate>
 </item>
 </channel>
 </rss>
