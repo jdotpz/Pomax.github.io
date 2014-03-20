@@ -22,47 +22,48 @@
     <main>
       <div id="gh-weblog-container"></div>
     </main>
-    <!-- scripts come last -->
-    <script src="gh-weblog/js/underscore.min.js"></script>
-    <script src="gh-weblog/js/jquery.2.js"></script>
-    <script src="gh-weblog/js/octokit.js"></script>
-
-    <!-- MathJax for beautiful LaTeX functions -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        displayAlign: "left",
-        displayIndent: "2em",
-        TeX: {
-          extensions: ["color.js"]
-        }
-      });
-    </script>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-    <script>
-    // markdown turns ` into <code>, and we don't want that for LaTeX
-    function cleanMath() {
-      return function(element) {
-        var s = element.innerHTML;
-        s = s.replace(/<code>\\\[/g, '\\[');
-        s = s.replace(/\\\]<\/code>/g, '\\]');
-        element.innerHTML = s;
-      };
-    }
-    // do MathJax stuffs
-    function processMath() {
-      return function(element) {
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub, element, false]);
-      };
-    }
-    </script>
-    <script src="gh-weblog/js/main.js"
-            onload="setupWebLog({
-              username: 'Pomax',
-              repo: 'Pomax.github.io',
-              branch: 'master',
-              path: 'gh-weblog',
-              order: 'newest',
-              processors: ['cleanMath', 'processMath']})"
-            async></script>
   </body>
+
+	<!-- scripts come last -->
+	<script src="gh-weblog/js/underscore.min.js"></script>
+	<script src="gh-weblog/js/jquery.2.js"></script>
+	<script src="gh-weblog/js/octokit.js"></script>
+
+	<!-- MathJax for beautiful LaTeX functions -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			displayAlign: "left",
+			displayIndent: "2em",
+			TeX: {
+				extensions: ["color.js"]
+			}
+		});
+	</script>
+	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script>
+	// markdown turns ` into <code>, and we don't want that for LaTeX
+	function cleanMath() {
+		return function(element) {
+			var s = element.innerHTML;
+			s = s.replace(/<code>\\\[/g, '\\[');
+			s = s.replace(/\\\]<\/code>/g, '\\]');
+			element.innerHTML = s;
+		};
+	}
+	// do MathJax stuffs
+	function processMath() {
+		return function(element) {
+			MathJax.Hub.Queue(["Typeset", MathJax.Hub, element, false]);
+		};
+	}
+	</script>
+	<script src="gh-weblog/js/main.js"
+					onload="setupWebLog({
+						username: 'Pomax',
+						repo: 'Pomax.github.io',
+						branch: 'master',
+						path: 'gh-weblog',
+						order: 'newest',
+						processors: ['cleanMath', 'processMath']})"
+					async></script>
 </html>
