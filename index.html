@@ -34,17 +34,12 @@
         displayIndent: "2em",
         TeX: {
           extensions: ["color.js"]
-        },
-        skipStartupTypeset: true
+        }
       });
     </script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-
     <script>
     function mathProcessor() {
-      if(typeof MathJax === "undefined") {
-        return false;
-      }
       return function(element) {
         // markdown turns ` into <code>, and we don't want that for LaTeX
         var s = element.innerHTML;
