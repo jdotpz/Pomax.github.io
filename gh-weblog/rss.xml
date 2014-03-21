@@ -4,23 +4,39 @@
 <title>Pomax.github.io</title>
 <description>Pomax.github.io</description>
 <link>https://pomax.github.io/</link>
-<lastBuildDate>Thu Mar 20 2014 14:59:37 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
-<pubDate>Thu Mar 20 2014 14:59:37 GMT-0700 (Pacific Daylight Time)</pubDate>
+<lastBuildDate>Fri Mar 21 2014 14:29:18 GMT-0700 (PDT)</lastBuildDate>
+<pubDate>Fri Mar 21 2014 14:29:18 GMT-0700 (PDT)</pubDate>
 <ttl>1440</ttl>
 <item>
-<title>Bower.io and Processing.js, finally properly matched</title>
+<title>I totally showed this blog on </title>
 <category>no tags yet</category>
+<link>https://pomax.github.io/#gh-weblog-1395437338507</link>
+<guid>1395437338507</guid>
+<pubDate>Fri Mar 21 2014 14:28:58 GMT-0700 (PDT)</pubDate>
+</item><item>
+<title>Keeping things https</title>
+<category>Blog</category>
+<category>Github</category>
+<category>https</category>
+<category>Mixed Content</category>
+<link>https://pomax.github.io/#gh-weblog-1395360750136</link>
+<guid>1395360750136</guid>
+<pubDate>Thu Mar 20 2014 17:12:30 GMT-0700 (PDT)</pubDate>
+</item><item>
+<title>Bower.io and Processing.js, finally properly matched</title>
+<category>Processing.js</category>
+<category>Bower</category>
 <link>https://pomax.github.io/#gh-weblog-1395352725980</link>
 <guid>1395352725980</guid>
-<pubDate>Thu Mar 20 2014 14:58:45 GMT-0700 (Pacific Daylight Time)</pubDate>
+<pubDate>Thu Mar 20 2014 14:58:45 GMT-0700 (PDT)</pubDate>
 </item><item>
 <title>Of Math and MathJax</title>
 <category>MathJax</category>
 <category>maths</category>
-<category>blog</category>
+<category>Blog</category>
 <link>https://pomax.github.io/#gh-weblog-1395346781053</link>
 <guid>1395346781053</guid>
-<pubDate>Thu Mar 20 2014 13:19:41 GMT-0700 (Pacific Daylight Time)</pubDate>
+<pubDate>Thu Mar 20 2014 13:19:41 GMT-0700 (PDT)</pubDate>
 </item><item>
 <title>Projections and arcs - oh my</title>
 <category>Processing</category>
@@ -28,28 +44,28 @@
 <category>maths</category>
 <link>https://pomax.github.io/#gh-weblog-1395093268989</link>
 <guid>1395093268989</guid>
-<pubDate>Mon Mar 17 2014 14:54:28 GMT-0700 (Pacific Daylight Time)</pubDate>
+<pubDate>Mon Mar 17 2014 14:54:28 GMT-0700 (PDT)</pubDate>
 </item><item>
 <title>An excursion into OpenType fonts</title>
 <category>OpenType</category>
 <category>CFF</category>
 <link>https://pomax.github.io/#gh-weblog-1394399924544</link>
 <guid>1394399924544</guid>
-<pubDate>Sun Mar 09 2014 14:18:44 GMT-0700 (Pacific Daylight Time)</pubDate>
+<pubDate>Sun Mar 09 2014 14:18:44 GMT-0700 (PDT)</pubDate>
 </item><item>
 <title>Mozilla offices need fox plushies</title>
 <category>Mozilla</category>
 <category>Vancouver</category>
 <link>https://pomax.github.io/#gh-weblog-1394223197018</link>
 <guid>1394223197018</guid>
-<pubDate>Fri Mar 07 2014 12:13:17 GMT-0800 (Pacific Standard Time)</pubDate>
+<pubDate>Fri Mar 07 2014 12:13:17 GMT-0800 (PST)</pubDate>
 </item><item>
 <title>A blog? About time, wouldn't you say?</title>
 <category>Github</category>
 <category>Blog</category>
 <link>https://pomax.github.io/#gh-weblog-1394168624375</link>
 <guid>1394168624375</guid>
-<pubDate>Thu Mar 06 2014 21:03:44 GMT-0800 (Pacific Standard Time)</pubDate>
+<pubDate>Thu Mar 06 2014 21:03:44 GMT-0800 (PST)</pubDate>
 </item>
 </channel>
 </rss>
