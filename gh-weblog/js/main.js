@@ -81,6 +81,9 @@ function setupWebLog(options) {
       return console.error("No username/repo provided for gh-weblog.");
     }
     window.nunjucksEnv = new nunjucks.Environment(new nunjucks.WebLoader(context.path + 'views'));
+    nunjucksEnv.addFilter("cleanHTML", function(data) {
+      return data.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    });
     nunjucksEnv.addFilter("readableDate", function(data) {
       return (new Date(data)).toLocaleString();
     });
