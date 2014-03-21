@@ -7,8 +7,8 @@
     <button class="needstoken" onclick="window['gh-weblog'].removeEntry({{ published }})">Remove entry</button>
   </div>
   <div>
-    <textarea class="hidden original content" onblur="window['gh-weblog'].updateEntry({{ published }}, this)">{{ content }}</textarea>
     <div class="content" data-prefix="{{ published | shortDate }}" onclick="window['gh-weblog'].editEntry({{ published }})">{{ content }}</div>
     <div class="tags">{{ tags }}</div>
+    <textarea class="hidden original content" onblur="window['gh-weblog'].updateEntry({{ published }}, this)">{{ content }}</textarea>
   </div>
 </div>
