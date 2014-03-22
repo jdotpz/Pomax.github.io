@@ -37,6 +37,10 @@
   display: none!important;
 }
 
+#gh-weblog-container .entries .comments {
+  float: left;
+}
+
 .default button.needstoken {
   display: none!important;
 }

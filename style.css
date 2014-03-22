@@ -49,10 +49,18 @@ header h1 {
   text-align: justify;
 }
 
+#gh-weblog-container .entry  + .entry {
+  margin-top: 2em;
+}
+
+#gh-weblog-container .entry div.tags,
+#gh-weblog-container .entry div.comments {
+  font-size: 80%;
+  margin: 1.25em 0 0 0;
+}
+
 #gh-weblog-container .entry div.tags {
   float: right;
-  font-size: 80%;
-  margin: 0.25em 0 0 0;
   color: rgb(116, 144, 154);
 }
 
