@@ -49,6 +49,8 @@ function setupPostHandling() {
    *
    */
   context.addEntry = function addEntry(uid, entryObject) {
+    var newEntry = (arguments.length === 0);
+
     uid = uid || Date.now();
     //console.log("new entry " + uid);
 
@@ -72,7 +74,8 @@ function setupPostHandling() {
         var _ = document.createElement("div");
         _.innerHTML = result;
         var element = _.children[0];
-        entriesDiv.appendChild(element);
+        if (newEntry) { entriesDiv.prependChild(element); }
+        else { entriesDiv.appendChild(element); }
         context.parseEntry(element);
         context.processors.forEach(function(fn) { fn(element); });
 
