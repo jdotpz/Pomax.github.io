@@ -44,7 +44,7 @@ function setupWebLog(options) {
       if(list.length === 0) {
         return;
       }
-      resource = list.splice(0,1)[0];
+      resource = list.splice(list.length-1,1)[0];
       try {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", context.path + "content/"+resource+".json", true);

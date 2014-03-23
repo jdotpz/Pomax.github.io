@@ -72,7 +72,7 @@ function setupPostHandling() {
         var _ = document.createElement("div");
         _.innerHTML = result;
         var element = _.children[0];
-        entriesDiv.prependChild(element);
+        entriesDiv.appendChild(element);
         context.parseEntry(element);
         context.processors.forEach(function(fn) { fn(element); });
 
