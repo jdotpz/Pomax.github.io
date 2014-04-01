@@ -1,4 +1,46 @@
 function setupPostHandling() {
+
+  var makeDropZone = (function setupDropZoneFunction() {
+    if(!window.FileReader) {
+      console.error("Drag & drop not available: FileReader is not supported by this browser.");
+      return false;
+    }
+
+    function cancel(e) { if (e.preventDefault) { e.preventDefault(); } return false; }
+
+    return function makeDropZone(element, next) {
+
+      // Disable the browser-baked-in behaviour for drag & drop
+      element.addEventListener("dragover",  cancel);
+      element.addEventListener("dragenter", cancel);
+
+      function handleDrops(e) {
+        cancel(e);
+        var f, file, files = Array.prototype.slice.call(e.dataTransfer.files);
+        files.forEach(function(file) {
+          var reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.addEventListener("loadend", function(e, file) {
+            var bin = reader.result;
+            var img = document.createElement("img");
+            img.onerror = function() {
+              next("file drop was not an image.");
+            };
+            img.onload = function() {
+              next(false, bin);
+            };
+            img.src = bin;
+          });
+        });
+        return false;
+      }
+
+      // Add file-drop handling
+      element.addEventListener("drop", handleDrops);
+    }
+  }());
+
+
   var context = window["gh-weblog"],
       entriesDiv = document.querySelector("#gh-weblog-container .entries"),
       github,
@@ -79,14 +121,12 @@ function setupPostHandling() {
         context.parseEntry(element);
         context.processors.forEach(function(fn) { fn(element); });
 
-        // Do we need to scrollTo?
-        var l = window.location.toString(),
-            pos = l.lastIndexOf("#");
-        if(pos > -1) {
-          var fragment = l.substring(pos);
-          if (fragment.length > 2) {
-            window.location = fragment;
-          }
+        // effect image drag-and-drop
+        if(makeDropZone) {
+          makeDropZone(element, function(err, result) {
+            console.log(err);
+            console.log(result);
+          });
         }
 
         // can we bind tag-editing?
@@ -99,6 +139,15 @@ function setupPostHandling() {
           tagsdiv.innerHTML = entryObject.tags.join(",");
         });
 
+        // Do we need to scrollTo?
+        var l = window.location.toString(),
+            pos = l.lastIndexOf("#");
+        if(pos > -1) {
+          var fragment = l.substring(pos);
+          if (fragment.length > 2) {
+            window.location = fragment;
+          }
+        }
       });
     } catch (e) { return console.error("Nunjucks error", e); }
   };
