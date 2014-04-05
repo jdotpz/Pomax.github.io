@@ -200,7 +200,8 @@ function setupPostHandling() {
     ].join("\n") + "\n";
 
     var content = '';
-    Object.keys(entries).reverse().slice(0,20).forEach(function(key) {
+//    Object.keys(entries).reverse().slice(0,20).forEach(function(key) {
+    Object.keys(entries).slice(0,20).forEach(function(key) {
       var e = entries[key];
       if (!e) return;
       var entryString = [
