@@ -4,15 +4,15 @@
 <title>Pomax.github.io</title>
 <description>Pomax.github.io</description>
 <link>https://pomax.github.io/</link>
-<lastBuildDate>Fri Apr 04 2014 22:13:21 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
-<pubDate>Fri Apr 04 2014 22:13:21 GMT-0700 (Pacific Daylight Time)</pubDate>
+<lastBuildDate>Fri Apr 04 2014 22:27:42 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
+<pubDate>Fri Apr 04 2014 22:27:42 GMT-0700 (Pacific Daylight Time)</pubDate>
 <ttl>1440</ttl>
 <item>
-<title>Prototyping a font</title>
+<title>New Entry</title>
 <category>no tags yet</category>
-<link>https://pomax.github.io/#gh-weblog-1396674549697</link>
-<guid>1396674549697</guid>
-<pubDate>Fri Apr 04 2014 22:09:09 GMT-0700 (Pacific Daylight Time)</pubDate>
+<link>https://pomax.github.io/#gh-weblog-1396675650116</link>
+<guid>1396675650116</guid>
+<pubDate>Fri Apr 04 2014 22:27:30 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>A blog? About time, wouldn't you say?</title>
 <category>Github</category>
@@ -91,6 +91,14 @@
 <link>https://pomax.github.io/#gh-weblog-1395777819434</link>
 <guid>1395777819434</guid>
 <pubDate>Tue Mar 25 2014 13:03:39 GMT-0700 (Pacific Daylight Time)</pubDate>
+</item><item>
+<title>Prototyping a font</title>
+<category>OpenType</category>
+<category>Fonts</category>
+<category>Prototyping</category>
+<link>https://pomax.github.io/#gh-weblog-1396674549697</link>
+<guid>1396674549697</guid>
+<pubDate>Fri Apr 04 2014 22:09:09 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item>
 </channel>
 </rss>
