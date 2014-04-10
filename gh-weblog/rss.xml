@@ -4,8 +4,8 @@
 <title>Pomax.github.io</title>
 <description>Pomax.github.io</description>
 <link>https://pomax.github.io/</link>
-<lastBuildDate>Fri Apr 04 2014 22:34:11 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
-<pubDate>Fri Apr 04 2014 22:34:11 GMT-0700 (Pacific Daylight Time)</pubDate>
+<lastBuildDate>Thu Apr 10 2014 15:05:03 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
+<pubDate>Thu Apr 10 2014 15:05:03 GMT-0700 (Pacific Daylight Time)</pubDate>
 <ttl>1440</ttl>
 <item>
 <title>Prototyping a font</title>
@@ -93,6 +93,12 @@
 <link>https://pomax.github.io/#gh-weblog-1394168624375</link>
 <guid>1394168624375</guid>
 <pubDate>Thu Mar 06 2014 21:03:44 GMT-0800 (Pacific Standard Time)</pubDate>
+</item><item>
+<title>Catmull-Rom curve fitting.</title>
+<category>no tags yet</category>
+<link>https://pomax.github.io/#gh-weblog-1397167307456</link>
+<guid>1397167307456</guid>
+<pubDate>Thu Apr 10 2014 15:01:47 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item>
 </channel>
 </rss>
