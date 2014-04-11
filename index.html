@@ -51,6 +51,14 @@
   function processMath(element) {
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, element, false]);
   }
+  // processing <style> blocks
+  function processStyle(element) {
+    var s = element.innerHTML
+    s = s.replace("<p>{{style}}", "<style>")
+         .replace("{{/style}}</p>","</style>")
+         .replace(/url\(<a href="[^"]+">([^<]+)<\/a>\)/, "url($1)");
+    element.innerHTML = s;
+  }
   </script>
   <script src="gh-weblog/js/main.js"
           onload="setupWebLog({
@@ -59,6 +67,6 @@
             branch: 'master',
             path: 'gh-weblog',
             order: 'newest',
-            processors: ['cleanMath', 'processMath']})"
+            processors: ['cleanMath', 'processMath', 'processStyle']})"
           async></script>
 </html>
