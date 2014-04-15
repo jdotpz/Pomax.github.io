@@ -4,8 +4,8 @@
 <title>Pomax.github.io</title>
 <description>Pomax.github.io</description>
 <link>https://pomax.github.io/</link>
-<lastBuildDate>Tue Apr 15 2014 13:39:24 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
-<pubDate>Tue Apr 15 2014 13:39:24 GMT-0700 (Pacific Daylight Time)</pubDate>
+<lastBuildDate>Tue Apr 15 2014 15:48:43 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
+<pubDate>Tue Apr 15 2014 15:48:43 GMT-0700 (Pacific Daylight Time)</pubDate>
 <ttl>1440</ttl>
 <item>
 <title>Font prototyping</title>
@@ -117,11 +117,19 @@
 <guid>1397593988137</guid>
 <pubDate>Tue Apr 15 2014 13:33:08 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
-<title>Let's talk about Riemann.</title>
-<category>no tags yet</category>
+<title>Let's talk about Grandi.</title>
+<category>Maths</category>
+<category>Riemann</category>
+<category>Grandi</category>
 <link>https://pomax.github.io/#gh-weblog-1397594311833</link>
 <guid>1397594311833</guid>
 <pubDate>Tue Apr 15 2014 13:38:31 GMT-0700 (Pacific Daylight Time)</pubDate>
+</item><item>
+<title>Making technology take you into consideration</title>
+<category>no tags yet</category>
+<link>https://pomax.github.io/#gh-weblog-1397601880287</link>
+<guid>1397601880287</guid>
+<pubDate>Tue Apr 15 2014 15:44:40 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item>
 </channel>
 </rss>
