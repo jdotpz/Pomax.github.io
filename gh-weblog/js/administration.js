@@ -1,4 +1,5 @@
 function setupPostHandling() {
+
   var context = window["gh-weblog"],
       entriesDiv = document.querySelector("#gh-weblog-container .entries"),
       github,
