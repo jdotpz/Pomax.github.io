@@ -4,8 +4,8 @@
 <title>Pomax.github.io</title>
 <description>Pomax.github.io</description>
 <link>https://pomax.github.io/</link>
-<lastBuildDate>Tue Apr 15 2014 13:36:14 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
-<pubDate>Tue Apr 15 2014 13:36:14 GMT-0700 (Pacific Daylight Time)</pubDate>
+<lastBuildDate>Tue Apr 15 2014 13:39:24 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
+<pubDate>Tue Apr 15 2014 13:39:24 GMT-0700 (Pacific Daylight Time)</pubDate>
 <ttl>1440</ttl>
 <item>
 <title>Font prototyping</title>
@@ -111,10 +111,17 @@
 <pubDate>Thu Mar 06 2014 21:03:44 GMT-0800 (Pacific Standard Time)</pubDate>
 </item><item>
 <title>Small wins are important wins</title>
-<category>no tags yet</category>
+<category>Thimble</category>
+<category>Development</category>
 <link>https://pomax.github.io/#gh-weblog-1397593988137</link>
 <guid>1397593988137</guid>
 <pubDate>Tue Apr 15 2014 13:33:08 GMT-0700 (Pacific Daylight Time)</pubDate>
+</item><item>
+<title>Let's talk about Riemann.</title>
+<category>no tags yet</category>
+<link>https://pomax.github.io/#gh-weblog-1397594311833</link>
+<guid>1397594311833</guid>
+<pubDate>Tue Apr 15 2014 13:38:31 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item>
 </channel>
 </rss>
