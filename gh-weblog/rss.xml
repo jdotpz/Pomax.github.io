@@ -4,10 +4,18 @@
 <title>Pomax.github.io</title>
 <description>Pomax.github.io</description>
 <link>https://pomax.github.io/</link>
-<lastBuildDate>Thu Apr 10 2014 21:04:59 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
-<pubDate>Thu Apr 10 2014 21:04:59 GMT-0700 (Pacific Daylight Time)</pubDate>
+<lastBuildDate>Tue Apr 15 2014 13:36:14 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
+<pubDate>Tue Apr 15 2014 13:36:14 GMT-0700 (Pacific Daylight Time)</pubDate>
 <ttl>1440</ttl>
 <item>
+<title>Font prototyping</title>
+<category>OpenType</category>
+<category>Font</category>
+<category>Typeface</category>
+<link>https://pomax.github.io/#gh-weblog-1397188962389</link>
+<guid>1397188962389</guid>
+<pubDate>Thu Apr 10 2014 21:02:42 GMT-0700 (Pacific Daylight Time)</pubDate>
+</item><item>
 <title>Catmull-Rom curve fitting.</title>
 <category>Maths</category>
 <category>Bezier</category>
@@ -39,12 +47,6 @@
 <link>https://pomax.github.io/#gh-weblog-1395598922674</link>
 <guid>1395598922674</guid>
 <pubDate>Sun Mar 23 2014 11:22:02 GMT-0700 (Pacific Daylight Time)</pubDate>
-</item><item>
-<title>Font prototyping</title>
-<category>no tags yet</category>
-<link>https://pomax.github.io/#gh-weblog-1397188962389</link>
-<guid>1397188962389</guid>
-<pubDate>Thu Apr 10 2014 21:02:42 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Making Mozilla Webmaker's Thimble a little better</title>
 <category>Mozilla</category>
@@ -107,6 +109,12 @@
 <link>https://pomax.github.io/#gh-weblog-1394168624375</link>
 <guid>1394168624375</guid>
 <pubDate>Thu Mar 06 2014 21:03:44 GMT-0800 (Pacific Standard Time)</pubDate>
+</item><item>
+<title>Small wins are important wins</title>
+<category>no tags yet</category>
+<link>https://pomax.github.io/#gh-weblog-1397593988137</link>
+<guid>1397593988137</guid>
+<pubDate>Tue Apr 15 2014 13:33:08 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item>
 </channel>
 </rss>
