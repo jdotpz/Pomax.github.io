@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/pomax
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://pomax.github.io
+  * I am pomax (https://keybase.io/pomax) on keybase.
+  * I have a public key with fingerprint BA59 21A5 AB6C 39CE 1780  808B 43FF 8F43 17B3 DC69
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "ba5921a5ab6c39ce1780808b43ff8f4317b3dc69",
+            "host": "keybase.io",
+            "key_id": "43ff8f4317b3dc69",
+            "uid": "5005e69604469d8994c4ee1b5a15d100",
+            "username": "pomax"
+        },
+        "service": {
+            "hostname": "pomax.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1399311110,
+    "expire_in": 157680000,
+    "prev": "e0d4e6666a2365e33543f0b4c545d95f9e5847d8b2abe57ebc5cb4c31a3ed2b6",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.14
+Comment: https://keybase.io/crypto
+
+yMHlAnicbVFdSBRdGN4101xJFvwhAvFzkIoSndkzZ3Zm+wghCYQgSyQtdZkzc3Z3
+zN1ZZ2bNdRPEi8qMSoOsC7NMDIr4ROgihfxJiRCDrDDSJPsSKUpcL1zzRs9YQRc9
+czGc53ne531f3rGd2yw2a+hd40Cbf/WRdWJ4JWQp8U4kRCikymHKFaHO4K2fRwl4
+sRbUlIBBuSgkQsHBiFBEnAQECTNOniYfYoHHw3tYwDgRkCVOoHIpn6qbFSQGiTrO
+U1TCkYdbkQn7F39oS4A0DTEncDTLcoLMCwIrsRgzCIoMlBmaNo061gKiHxN3UPWL
+9VRjLkWoOkUiVGSr759ynlcxfCH0c4CgphqqpNYQ0WcYQd1lFhvhoOk+i5H7V44b
+KQGZLE4q6rCmK2qAcjHEKRmKGcwAQQAMAZ1L4fqgomG3Yjqgk+NpArMPriORmJZZ
+zBGIDsBBDAAki9OIlSALZQF6BAx51inzyCEiDJ0YSVAiKmBEgGUH4kh/HdcGVMoF
+yJiil0TqijcgGiENU42jwxXxFqvNkrA9zjydxZZk/33Q1xuJG9UpF07FPhaVF1Y8
+9PcBvTjv9Nqx7OTMjti1pGjl8o3sxLft4b65WyfvNaQXXY9139lnLy06fqg5P6s/
+fybB+DDeZa+9LE3m309dHr3Z22NfybyUFr19sGHoyJfB2Pn+ls75NKlt/XBV6/CV
+V+zkRf3l7Hryjog03rCQo4/Ejx2d+vytvrgUTMtPbFVzBTlfdy8+Rnerpjr/eVEY
+rWltWSp5wwzx1aGMyiZneUH/D7TYVLarr32iLDU9ZWFAC21oNe7mHrprJe6BZdq2
+lPXvuWjGiRHY/Wm/FivFrf+Hkzrmtc4De577+L0z/xnJz9yza9bep4PfV0GadcHx
+Pv3qJitQF8U=
+=M4g5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pomax
+
+==================================================================
