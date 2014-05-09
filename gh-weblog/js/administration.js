@@ -133,7 +133,6 @@ function setupPostHandling() {
       var file = files[i];
       var reader = new FileReader();
       var name = prompt("image name?");
-      alert(name);
       reader.addEventListener('loadend', function(e, file) {
         var data = this.result;
         var path = context.path + 'images/' + name;
