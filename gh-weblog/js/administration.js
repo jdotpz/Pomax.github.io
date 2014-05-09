@@ -80,6 +80,24 @@ function setupPostHandling() {
         context.parseEntry(element);
         context.processors.forEach(function(fn) { fn(element); });
 
+        // on click: edit! if you then click somewhere on the document, update!
+        var updateHandler = function(evt) {
+          evt.stopPropagation();
+          var textarea = element.querySelector("textarea");
+          if(evt.target !== textarea) {
+            context.updateEntry(uid, textarea);
+            document.removeEventListener("click", updateHandler);
+          }
+        };
+
+        var editHandler = function(evt) {
+          evt.stopPropagation();
+          context.editEntry(uid);
+          document.addEventListener("click", updateHandler);
+        };
+
+        element.addEventListener("click", editHandler);
+
         // Do we need to scrollTo?
         var l = window.location.toString(),
             pos = l.lastIndexOf("#");
@@ -104,6 +122,35 @@ function setupPostHandling() {
     } catch (e) { return console.error("Nunjucks error", e); }
   };
 
+  function cancel(evt) {
+    evt.preventDefault();
+    return false;
+  }
+
+  function dropHandler(evt) {
+    cancel(evt);
+    for (var files = evt.dataTransfer.files, i=0; i<files.length; i++) {
+      var file = files[i];
+      var reader = new FileReader();
+      var name = prompt("image name?");
+      alert(name);
+      reader.addEventListener('loadend', function(e, file) {
+        var data = this.result;
+        var path = context.path + 'images/' + name;
+        var pos = data.indexOf("base64,") + "base64,".length;
+        var binaryData = atob(data.substring(pos));
+        var commitMsg = "image upload [" + name + "]";
+        var isBinary = true;
+        branch.write(path, binaryData, commitMsg, isBinary)
+              .then(function() {
+                prompt("Your image url is:", '<img src="'+path+'">');
+              });
+      });
+      reader.readAsDataURL(file);
+    }
+    return false;
+  }
+
   /**
    *
    */
@@ -112,11 +159,15 @@ function setupPostHandling() {
     if(!uid) return;
     var entry = document.getElementById("gh-weblog-"+uid),
         content = entry.querySelector(".content"),
-        ocontent = entry.querySelector(".hidden.original.content");
+        ocontent = entry.querySelector(".original.content");
     // switcharoo
     if(!document.body.classList.contains("default")) {
       hide(content);
       show(ocontent);
+      // Set up file drag/drop behaviour
+      ocontent.addEventListener('dragover', cancel);
+      ocontent.addEventListener('dragenter', cancel);
+      ocontent.addEventListener('drop', dropHandler);
       ocontent.focus();
     }
   };

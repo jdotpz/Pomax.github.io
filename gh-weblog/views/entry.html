@@ -7,9 +7,9 @@
     <button class="needstoken" onclick="window['gh-weblog'].removeEntry({{ published }})">Remove entry</button>
   </div>
   <div>
-    <div class="content" data-prefix="{{ published | shortDate }}" onclick="window['gh-weblog'].editEntry({{ published }})">{{ content | cleanHTML }}</div>
+    <div class="content" data-prefix="{{ published | shortDate }}">{{ content | cleanHTML }}</div>
     <div class="comments">Let me know about your opinion on this post! But, only after reading <a href="https://github.com/Pomax/Pomax.github.io/issues/9" target="_blank">this</a>.</div>
     <div class="tags">{{ tags }}</div>
-    <textarea class="hidden original content" onblur="window['gh-weblog'].updateEntry({{ published }}, this)">{{ content }}</textarea>
+    <textarea class="hidden original content">{{ content }}</textarea>
   </div>
 </div>
