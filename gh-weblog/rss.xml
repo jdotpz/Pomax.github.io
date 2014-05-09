@@ -3,146 +3,156 @@
 <channel>
 <title>Pomax.github.io</title>
 <description>Pomax.github.io</description>
-<link>https://pomax.github.io/</link>
-<lastBuildDate>Mon Apr 28 2014 08:58:36 GMT-0700 (PDT)</lastBuildDate>
-<pubDate>Mon Apr 28 2014 08:58:36 GMT-0700 (PDT)</pubDate>
+<link>http://localhost:8080/</link>
+<lastBuildDate>Thu May 08 2014 17:57:35 GMT-0700 (Pacific Daylight Time)</lastBuildDate>
+<pubDate>Thu May 08 2014 17:57:35 GMT-0700 (Pacific Daylight Time)</pubDate>
 <ttl>1440</ttl>
 <item>
+<title>Wrapping up vacations</title>
+<category>Road trip</category>
+<category>California</category>
+<category>Vacation</category>
+<link>http://localhost:8080/#gh-weblog-1398700664537</link>
+<guid>1398700664537</guid>
+<pubDate>Mon Apr 28 2014 08:57:44 GMT-0700 (Pacific Daylight Time)</pubDate>
+</item><item>
+<title>It's All-hands time</title>
+<category>Mozilla</category>
+<category>Webmaker</category>
+<category>Allhands</category>
+<link>http://localhost:8080/#gh-weblog-1398700114681</link>
+<guid>1398700114681</guid>
+<pubDate>Mon Apr 28 2014 08:48:34 GMT-0700 (Pacific Daylight Time)</pubDate>
+</item><item>
 <title>Making technology take you into consideration</title>
 <category>Mozilla</category>
 <category>Webmaker</category>
-<link>https://pomax.github.io/#gh-weblog-1397601880287</link>
+<link>http://localhost:8080/#gh-weblog-1397601880287</link>
 <guid>1397601880287</guid>
-<pubDate>Tue Apr 15 2014 15:44:40 GMT-0700 (PDT)</pubDate>
+<pubDate>Tue Apr 15 2014 15:44:40 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Let's talk about Grandi.</title>
 <category>Maths</category>
 <category>Riemann</category>
 <category>Grandi</category>
-<link>https://pomax.github.io/#gh-weblog-1397594311833</link>
+<link>http://localhost:8080/#gh-weblog-1397594311833</link>
 <guid>1397594311833</guid>
-<pubDate>Tue Apr 15 2014 13:38:31 GMT-0700 (PDT)</pubDate>
+<pubDate>Tue Apr 15 2014 13:38:31 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Small wins are important wins</title>
 <category>Thimble</category>
 <category>Development</category>
-<link>https://pomax.github.io/#gh-weblog-1397593988137</link>
+<link>http://localhost:8080/#gh-weblog-1397593988137</link>
 <guid>1397593988137</guid>
-<pubDate>Tue Apr 15 2014 13:33:08 GMT-0700 (PDT)</pubDate>
+<pubDate>Tue Apr 15 2014 13:33:08 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Font prototyping</title>
 <category>OpenType</category>
 <category>Font</category>
 <category>Typeface</category>
-<link>https://pomax.github.io/#gh-weblog-1397188962389</link>
+<link>http://localhost:8080/#gh-weblog-1397188962389</link>
 <guid>1397188962389</guid>
-<pubDate>Thu Apr 10 2014 21:02:42 GMT-0700 (PDT)</pubDate>
+<pubDate>Thu Apr 10 2014 21:02:42 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Catmull-Rom curve fitting.</title>
 <category>Maths</category>
 <category>Bezier</category>
 <category>Catmull-Rom</category>
-<link>https://pomax.github.io/#gh-weblog-1397167307456</link>
+<link>http://localhost:8080/#gh-weblog-1397167307456</link>
 <guid>1397167307456</guid>
-<pubDate>Thu Apr 10 2014 15:01:47 GMT-0700 (PDT)</pubDate>
+<pubDate>Thu Apr 10 2014 15:01:47 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Prototyping a font</title>
 <category>OpenType</category>
 <category>Fonts</category>
 <category>Prototyping</category>
-<link>https://pomax.github.io/#gh-weblog-1396674549697</link>
+<link>http://localhost:8080/#gh-weblog-1396674549697</link>
 <guid>1396674549697</guid>
-<pubDate>Fri Apr 04 2014 22:09:09 GMT-0700 (PDT)</pubDate>
+<pubDate>Fri Apr 04 2014 22:09:09 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Thimble: now without mixed content grief</title>
 <category>Mozilla</category>
 <category>Webmaker</category>
 <category>Thimble</category>
 <category>Proxy</category>
-<link>https://pomax.github.io/#gh-weblog-1395777819434</link>
+<link>http://localhost:8080/#gh-weblog-1395777819434</link>
 <guid>1395777819434</guid>
-<pubDate>Tue Mar 25 2014 13:03:39 GMT-0700 (PDT)</pubDate>
+<pubDate>Tue Mar 25 2014 13:03:39 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Updates to node-flickrapi</title>
 <category>Node.FlickrAPI</category>
 <category>FlickrMirror</category>
-<link>https://pomax.github.io/#gh-weblog-1395598922674</link>
+<link>http://localhost:8080/#gh-weblog-1395598922674</link>
 <guid>1395598922674</guid>
-<pubDate>Sun Mar 23 2014 11:22:02 GMT-0700 (PDT)</pubDate>
+<pubDate>Sun Mar 23 2014 11:22:02 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Making Mozilla Webmaker's Thimble a little better</title>
 <category>Mozilla</category>
 <category>Webmaker</category>
 <category>Thimble</category>
 <category>Proxy</category>
-<link>https://pomax.github.io/#gh-weblog-1395439049236</link>
+<link>http://localhost:8080/#gh-weblog-1395439049236</link>
 <guid>1395439049236</guid>
-<pubDate>Fri Mar 21 2014 14:57:29 GMT-0700 (PDT)</pubDate>
+<pubDate>Fri Mar 21 2014 14:57:29 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Keeping things https</title>
 <category>Blog</category>
 <category>Github</category>
 <category>https</category>
 <category>Mixed Content</category>
-<link>https://pomax.github.io/#gh-weblog-1395360750136</link>
+<link>http://localhost:8080/#gh-weblog-1395360750136</link>
 <guid>1395360750136</guid>
-<pubDate>Thu Mar 20 2014 17:12:30 GMT-0700 (PDT)</pubDate>
+<pubDate>Thu Mar 20 2014 17:12:30 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Bower.io and Processing.js, finally properly matched</title>
 <category>Processing.js</category>
 <category>Bower</category>
-<link>https://pomax.github.io/#gh-weblog-1395352725980</link>
+<link>http://localhost:8080/#gh-weblog-1395352725980</link>
 <guid>1395352725980</guid>
-<pubDate>Thu Mar 20 2014 14:58:45 GMT-0700 (PDT)</pubDate>
+<pubDate>Thu Mar 20 2014 14:58:45 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Of Math and MathJax</title>
 <category>MathJax</category>
 <category>maths</category>
 <category>Blog</category>
-<link>https://pomax.github.io/#gh-weblog-1395346781053</link>
+<link>http://localhost:8080/#gh-weblog-1395346781053</link>
 <guid>1395346781053</guid>
-<pubDate>Thu Mar 20 2014 13:19:41 GMT-0700 (PDT)</pubDate>
+<pubDate>Thu Mar 20 2014 13:19:41 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Projections and arcs - oh my</title>
 <category>Processing</category>
 <category>physics</category>
 <category>maths</category>
-<link>https://pomax.github.io/#gh-weblog-1395093268989</link>
+<link>http://localhost:8080/#gh-weblog-1395093268989</link>
 <guid>1395093268989</guid>
-<pubDate>Mon Mar 17 2014 14:54:28 GMT-0700 (PDT)</pubDate>
+<pubDate>Mon Mar 17 2014 14:54:28 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>An excursion into OpenType fonts</title>
 <category>OpenType</category>
 <category>CFF</category>
-<link>https://pomax.github.io/#gh-weblog-1394399924544</link>
+<link>http://localhost:8080/#gh-weblog-1394399924544</link>
 <guid>1394399924544</guid>
-<pubDate>Sun Mar 09 2014 14:18:44 GMT-0700 (PDT)</pubDate>
+<pubDate>Sun Mar 09 2014 14:18:44 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item><item>
 <title>Mozilla offices need fox plushies</title>
 <category>Mozilla</category>
 <category>Vancouver</category>
-<link>https://pomax.github.io/#gh-weblog-1394223197018</link>
+<link>http://localhost:8080/#gh-weblog-1394223197018</link>
 <guid>1394223197018</guid>
-<pubDate>Fri Mar 07 2014 12:13:17 GMT-0800 (PST)</pubDate>
+<pubDate>Fri Mar 07 2014 12:13:17 GMT-0800 (Pacific Standard Time)</pubDate>
 </item><item>
 <title>A blog? About time, wouldn't you say?</title>
 <category>Github</category>
 <category>Blog</category>
-<link>https://pomax.github.io/#gh-weblog-1394168624375</link>
+<link>http://localhost:8080/#gh-weblog-1394168624375</link>
 <guid>1394168624375</guid>
-<pubDate>Thu Mar 06 2014 21:03:44 GMT-0800 (PST)</pubDate>
+<pubDate>Thu Mar 06 2014 21:03:44 GMT-0800 (Pacific Standard Time)</pubDate>
 </item><item>
-<title>It's All-hands time</title>
+<title>Image uploading? About time!</title>
 <category>no tags yet</category>
-<link>https://pomax.github.io/#gh-weblog-1398700114681</link>
-<guid>1398700114681</guid>
-<pubDate>Mon Apr 28 2014 08:48:34 GMT-0700 (PDT)</pubDate>
-</item><item>
-<title>Wrapping up vacations</title>
-<category>no tags yet</category>
-<link>https://pomax.github.io/#gh-weblog-1398700664537</link>
-<guid>1398700664537</guid>
-<pubDate>Mon Apr 28 2014 08:57:44 GMT-0700 (PDT)</pubDate>
+<link>http://localhost:8080/#gh-weblog-1399596874946</link>
+<guid>1399596874946</guid>
+<pubDate>Thu May 08 2014 17:54:34 GMT-0700 (Pacific Daylight Time)</pubDate>
 </item>
 </channel>
 </rss>
